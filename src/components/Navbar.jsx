@@ -5,6 +5,20 @@ import xicon from "../assets/xicon.svg";
 
 const Navbar = () => {
   const [navOpened, setnavOpenend] = useState(false);
+  const [dimensions, setDimensions] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  console.log(dimensions.width);
+  const handleResize = () => {
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
   return (
     <div className="nav-bar">
       <div className="nav-img">
@@ -29,7 +43,9 @@ const Navbar = () => {
       </div>
       <div
         className="mobile-nav-menu"
-        style={{ right: navOpened ? "0px" : "-350px" }}
+        style={{
+          right: navOpened ? "0px" : "-390px",
+        }}
       >
         <ul className="mobile-nav-list">
           <li>
