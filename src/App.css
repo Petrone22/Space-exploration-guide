@@ -168,6 +168,9 @@ tr {
   body {
     overflow: hidden;
   }
+  .space {
+    background-image: url(./assets/home/background-home-mobile.jpg);
+  }
   .nav-menu {
     display: none;
   }
