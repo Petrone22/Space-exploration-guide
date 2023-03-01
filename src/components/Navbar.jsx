@@ -1,27 +1,28 @@
 import React from "react";
-import svg from "../assets/icon.svg";
-import hamburger from "../assets/hamburgerMenu.svg";
-import { useState } from "react";
+import navImg from "../assets/icon.svg";
 
 const Navbar = () => {
-  const [nav, openNav] = useState(true);
-  console.log(nav);
   return (
     <div className="nav-bar">
-      <div className="nav-icon">
-        <img src={svg} alt="logo" />
+      <div className="nav-img">
+        <img src={navImg} alt="Logo" />
       </div>
       <tr></tr>
       <div className="nav-menu">
-        <ul>
-          <li>00 HOME</li>
-          <li>01 DESTINATION</li>
-          <li>02 CREW</li>
-          <li>03 TECHNOLOGY</li>
+        <ul className="nav-list">
+          <li>
+            <div className="li-num">00</div> HOME
+          </li>
+          <li>
+            <div className="li-num">01</div> DESTINATION
+          </li>
+          <li>
+            <div className="li-num">02</div> CREW
+          </li>
+          <li>
+            <div className="li-num">03</div> TECHNOLOGY
+          </li>
         </ul>
-      </div>
-      <div className="hamburger" onClick={() => openNav((prevNav) => !prevNav)}>
-        <img src={hamburger} alt="Menu" />
       </div>
     </div>
   );

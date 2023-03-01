@@ -1,10 +1,11 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+
+import Space from "./components/Space";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
+      <Space />
     </div>
   );
 }
