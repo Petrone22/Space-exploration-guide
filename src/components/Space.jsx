@@ -5,19 +5,19 @@ import Crew from "./crew";
 import Destination from "./destination";
 import Technology from "./technology";
 import { useState } from "react";
-import data from "./data.json";
+// import data from "./data.json";
 const Space = () => {
   const [page, setPage] = useState(0);
 
   function navDisplay() {
-    return <Navbar />;
+    return <Navbar setPage={setPage} page={page} />;
   }
 
   function pageDisplay() {
     if (page === 0) {
       return <Home />;
     } else if (page === 1) {
-      return <Destination />;
+      return <Destination page={page} />;
     } else if (page === 2) {
       return <Crew />;
     } else {
