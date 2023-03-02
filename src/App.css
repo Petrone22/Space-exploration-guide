@@ -206,6 +206,76 @@ tr {
 .arrival-data-span {
   font-size: 30px;
 }
+.crew-page {
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.meet-your-crew {
+  font-size: 28px;
+  margin-left: 20px;
+}
+.meet-crew {
+  opacity: 60%;
+  margin-right: 15px;
+}
+.crew-information-panel {
+  max-width: 45%;
+}
+.crew-image-panel {
+  width: stretch;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.crew-image-div {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  /* width: 569px;
+  height: 712px; */
+  object-fit: cover;
+  /* background-image: url(./assets/crew/image-douglas-hurley.png); */
+  background-size: cover;
+}
+.commander-info {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.crew-title {
+  font-size: 30px;
+  opacity: 50%;
+}
+.crew-name {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.crew-paragraph {
+  color: var(--clr-secondary);
+  font-size: 18px;
+  max-width: 444px;
+}
+.selectionPoint {
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.crew-selection-div {
+  display: flex;
+  padding: 1rem;
+  padding-left: 0;
+  position: absolute;
+  bottom: 60px;
+}
+
 @media all and (max-width: 1340px) {
   tr {
     display: none;
