@@ -275,7 +275,80 @@ tr {
   position: absolute;
   bottom: 60px;
 }
+.technology-page {
+  padding: 50px;
+  height: 100%;
+  display: flex;
+}
+.tech-image-panel {
+  width: 515px;
+  height: 527px;
+}
+.tech-info-panel {
+  width: stretch;
+}
+.tech-number-div {
+  font-size: 28px;
+  margin-left: 20px;
+}
+.info-number {
+  opacity: 60%;
+}
 
+.tech-desc-panel {
+  display: flex;
+  max-width: 80%;
+  margin-top: 80px;
+  gap: 60px;
+}
+.tech-info-button {
+  width: 60px;
+  height: 60px;
+  /* background: white; */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: 0.5s ease;
+}
+.tech-info-button:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.tech-description-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 470px;
+}
+h6 {
+  font-size: 29p;
+  color: var(--clr-secondary);
+}
+.tech-name {
+  margin-top: 10px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.tech-description {
+  color: var(--clr-secondary);
+  font-size: 18px;
+  max-width: 100%;
+}
+
+.tech-image-div {
+  width: 515px;
+  height: 527px;
+  background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
+  right: 0;
+  position: absolute;
+}
 @media all and (max-width: 1340px) {
   tr {
     display: none;
