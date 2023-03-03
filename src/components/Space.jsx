@@ -24,7 +24,6 @@ const Space = () => {
     width: window.innerWidth,
     height: window.innerHeight,
   });
-  console.log(dimensions.width);
   const handleResize = () => {
     setDimensions({
       width: window.innerWidth,
@@ -125,7 +124,10 @@ const Space = () => {
   return (
     <div
       className="space"
-      style={{ backgroundImage: setSpaceBG().backgroundImage }}
+      style={{
+        backgroundImage: setSpaceBG().backgroundImage,
+        padding: page === 3 ? "0" : "",
+      }}
     >
       <div className="nav-capsule">{navDisplay()}</div>
       <div className="main-content">{pageDisplay()}</div>

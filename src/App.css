@@ -354,6 +354,9 @@ h6 {
   background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
   right: 0;
   position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media all and (max-width: 1340px) {
   tr {
@@ -534,12 +537,68 @@ h6 {
     justify-content: center;
     align-items: center;
   }
+  .tech-number-div {
+    font-size: 19px;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+  }
+  .technology-page {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .tech-image-div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: static;
+    margin-top: -80px;
+  }
+  .tech-desc-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    gap: 0;
+  }
+  .tech-description-panel {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .tech-info-selection {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .tech-info-button {
+    width: 40px;
+    height: 40px;
+  }
+  .tech-description {
+    max-width: 80%;
+  }
 }
 
 @media all and (max-width: 700px) {
   html,
   body {
     overflow: hidden;
+  }
+  .nav-bar {
+    height: 80px;
   }
   .space {
     background-image: url(./assets/home/background-home-mobile.jpg);
@@ -585,12 +644,11 @@ h6 {
     margin: 0;
   }
   .home {
-    height: 400px;
-    gap: 0;
+    height: 100%;
   }
+
   .space-question-div {
     font-size: 19px;
-    margin-top: -5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,7 +656,7 @@ h6 {
   .space-word {
     margin-top: 10px;
     margin-bottom: 15px;
-    font-size: 80px;
+    font-size: 70px;
   }
   .space-paragraph {
     font-size: 20px;
@@ -606,8 +664,8 @@ h6 {
     text-align: center;
   }
   .explore-button-div {
-    height: 190px;
-    width: 190px;
+    height: 170px;
+    width: 170px;
   }
   .pick-destination-div {
     font-size: 15px;
@@ -754,5 +812,66 @@ h6 {
     width: 12px;
     height: 12px;
     margin: 0;
+  }
+  .tech-number-div {
+    font-size: 15px;
+    top: 85px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .technology-page {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .tech-image-div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: static;
+    margin-top: -80px;
+  }
+  .tech-desc-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    gap: 0;
+  }
+  .tech-description-panel {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .tech-info-selection {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .tech-info-button {
+    width: 40px;
+    height: 40px;
+  }
+  .tech-name {
+    font-size: 35px;
+    margin: 0;
+  }
+  .tech-description {
+    max-width: 80%;
+    font-size: 13px;
+    text-align: center;
   }
 }
