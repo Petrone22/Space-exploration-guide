@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Space-exploration-guide/static/css/main.bc0888fd.css",
-    "main.js": "/Space-exploration-guide/static/js/main.28198d8d.js",
+    "main.css": "/Space-exploration-guide/static/css/main.24270301.css",
+    "main.js": "/Space-exploration-guide/static/js/main.61774b22.js",
     "static/media/image-victor-glover.png": "/Space-exploration-guide/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/Space-exploration-guide/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/Space-exploration-guide/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -30,11 +30,11 @@
     "static/media/xicon.svg": "/Space-exploration-guide/static/media/xicon.332ce1a5610dd8facd9ba6d119498666.svg",
     "static/media/icon.svg": "/Space-exploration-guide/static/media/icon.97a4f9a9594565583fe91ff46aa9a4f0.svg",
     "static/media/hamburgerMenu.svg": "/Space-exploration-guide/static/media/hamburgerMenu.f2a510537ea953746aee741b0c7200de.svg",
-    "main.bc0888fd.css.map": "/Space-exploration-guide/static/css/main.bc0888fd.css.map",
-    "main.28198d8d.js.map": "/Space-exploration-guide/static/js/main.28198d8d.js.map"
+    "main.24270301.css.map": "/Space-exploration-guide/static/css/main.24270301.css.map",
+    "main.61774b22.js.map": "/Space-exploration-guide/static/js/main.61774b22.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc0888fd.css",
-    "static/js/main.28198d8d.js"
+    "static/css/main.24270301.css",
+    "static/js/main.61774b22.js"
   ]
 }
