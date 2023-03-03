@@ -35,24 +35,36 @@ const Crew = () => {
         <div className="crew-selection-div">
           <div
             className="selectionPoint"
+            style={{
+              backgroundColor: crewPage === 0 ? "white" : "#979797",
+            }}
             onClick={() => {
               setCrewPage((prevPage) => 0);
             }}
           ></div>
           <div
             className="selectionPoint"
+            style={{
+              backgroundColor: crewPage === 1 ? "white" : "#979797",
+            }}
             onClick={() => {
               setCrewPage((prevPage) => 1);
             }}
           ></div>
           <div
             className="selectionPoint"
+            style={{
+              backgroundColor: crewPage === 2 ? "white" : "#979797",
+            }}
             onClick={() => {
               setCrewPage((prevPage) => 2);
             }}
           ></div>
           <div
             className="selectionPoint"
+            style={{
+              backgroundColor: crewPage === 3 ? "white" : "#979797",
+            }}
             onClick={() => {
               setCrewPage((prevPage) => 3);
             }}

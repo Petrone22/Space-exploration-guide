@@ -47,8 +47,8 @@ tr {
 }
 .nav-menu {
   width: 48%;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
   border-radius: 4px;
   height: 90%;
 }
@@ -76,7 +76,7 @@ tr {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 200px;
+  gap: 400px;
 }
 .space-question-div {
   width: 450px;
@@ -268,6 +268,9 @@ tr {
   margin-right: 20px;
   cursor: pointer;
 }
+.selectionPoint:hover {
+  background-color: rgba(132, 16, 16, 0.651);
+}
 .crew-selection-div {
   display: flex;
   padding: 1rem;
@@ -412,7 +415,7 @@ h6 {
   .mobile-nav-menu {
     display: block;
     position: absolute;
-    right: -350px;
+    right: -700px;
     top: 1px;
     height: 100%;
 

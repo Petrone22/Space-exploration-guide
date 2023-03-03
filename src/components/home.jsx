@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Home = ({ setPage }) => {
   return (
     <div className="home">
       <div className="space-question-div">
@@ -13,7 +13,12 @@ const Home = () => {
           experience!
         </p>
       </div>
-      <div className="explore-button-div">
+      <div
+        className="explore-button-div"
+        onClick={() => {
+          setPage((prevPage) => 1);
+        }}
+      >
         <div className="explore">EXPLORE</div>
       </div>
     </div>
