@@ -57,7 +57,7 @@ const Technology = () => {
   return (
     <div className="technology-page">
       <div className="tech-info-panel">
-        <div className="tech-nu mber-div">
+        <div className="tech-number-div">
           <span className="info-number">03</span> SPACE LAUNCH 101
         </div>
         <div className="tech-desc-panel">

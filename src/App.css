@@ -210,7 +210,7 @@ tr {
   padding: 50px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .img-hr {
   display: none;
@@ -230,18 +230,16 @@ tr {
   width: stretch;
   max-width: 55%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 .crew-image-div {
-  height: 600px;
-  width: 600px;
+  height: 550px;
+  width: 550px;
   position: absolute;
-  /* width: 569px;
-  height: 712px; */
+  right: 50px;
   object-fit: cover;
-  /* background-image: url(./assets/crew/image-douglas-hurley.png); */
+
   background-size: cover;
 }
 .commander-info {
@@ -470,11 +468,17 @@ h6 {
   }
   .crew-page {
     padding: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
   }
   .main-content {
     display: flex;
     flex-direction: column;
+  }
+  .crew-information-panel {
+    width: 100%;
+    max-width: 100%;
   }
   .crew-information-panel {
     width: 100%;
@@ -485,6 +489,7 @@ h6 {
     align-items: center;
     flex-direction: column;
   }
+
   .meet-your-crew {
     position: absolute;
     left: 10px;
@@ -504,7 +509,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     height: 250px;
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
   }
@@ -731,6 +736,7 @@ h6 {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .main-content {
     display: flex;
@@ -769,7 +775,7 @@ h6 {
     height: 250px;
     width: 100%;
     position: static;
-    margin-top: -50px;
+    /* margin-top: -50px; */
   }
   .commander-info {
     margin: 0;
