@@ -59,7 +59,7 @@ const Navbar = ({ page, setPage }) => {
       <div
         className="mobile-nav-menu"
         style={{
-          right: navOpened ? "0px" : "-390px",
+          opacity: navOpened ? "100%" : "0%",
         }}
       >
         <ul className="mobile-nav-list">

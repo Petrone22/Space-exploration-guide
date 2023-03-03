@@ -598,6 +598,7 @@ h6 {
 }
 
 @media all and (max-width: 700px) {
+  *,
   html,
   body {
     overflow: hidden;
@@ -622,7 +623,7 @@ h6 {
   .mobile-nav-menu {
     display: block;
     position: absolute;
-    right: -700px;
+    right: 0;
     top: 1px;
     height: 100%;
 
