@@ -95,7 +95,7 @@ const Destination = ({ page }) => {
           <div className="planet-information">
             <div className="planet-distance">
               <span className="distance-span">AVG. DISTANCE</span>
-              <span className="arrival-data-span">
+              <span className="distance-data-span">
                 {getPlanetData().distance}
               </span>
             </div>

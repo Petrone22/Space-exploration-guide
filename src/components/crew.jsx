@@ -27,56 +27,57 @@ const Crew = () => {
         <div className="meet-your-crew">
           <span className="meet-crew">02</span>MEET YOUR CREW
         </div>
-        <div className="commander-info">
-          <span className="crew-title">{getCrewData().title}</span>
-          <h1 className="crew-name">{getCrewData().name}</h1>
-          <p className="crew-paragraph">{getCrewData().bio}</p>
-        </div>
-        <div className="crew-selection-div">
-          <div
-            className="selectionPoint"
-            style={{
-              backgroundColor: crewPage === 0 ? "white" : "#979797",
-            }}
-            onClick={() => {
-              setCrewPage((prevPage) => 0);
-            }}
-          ></div>
-          <div
-            className="selectionPoint"
-            style={{
-              backgroundColor: crewPage === 1 ? "white" : "#979797",
-            }}
-            onClick={() => {
-              setCrewPage((prevPage) => 1);
-            }}
-          ></div>
-          <div
-            className="selectionPoint"
-            style={{
-              backgroundColor: crewPage === 2 ? "white" : "#979797",
-            }}
-            onClick={() => {
-              setCrewPage((prevPage) => 2);
-            }}
-          ></div>
-          <div
-            className="selectionPoint"
-            style={{
-              backgroundColor: crewPage === 3 ? "white" : "#979797",
-            }}
-            onClick={() => {
-              setCrewPage((prevPage) => 3);
-            }}
-          ></div>
+        <div className="crew-selection-panel">
+          <div className="commander-info">
+            <span className="crew-title">{getCrewData().title}</span>
+            <h1 className="crew-name">{getCrewData().name}</h1>
+            <p className="crew-paragraph">{getCrewData().bio}</p>
+          </div>
+          <div className="crew-selection-div">
+            <div
+              className="selectionPoint"
+              style={{
+                backgroundColor: crewPage === 0 ? "white" : "#979797",
+              }}
+              onClick={() => {
+                setCrewPage((prevPage) => 0);
+              }}
+            ></div>
+            <div
+              className="selectionPoint"
+              style={{
+                backgroundColor: crewPage === 1 ? "white" : "#979797",
+              }}
+              onClick={() => {
+                setCrewPage((prevPage) => 1);
+              }}
+            ></div>
+            <div
+              className="selectionPoint"
+              style={{
+                backgroundColor: crewPage === 2 ? "white" : "#979797",
+              }}
+              onClick={() => {
+                setCrewPage((prevPage) => 2);
+              }}
+            ></div>
+            <div
+              className="selectionPoint"
+              style={{
+                backgroundColor: crewPage === 3 ? "white" : "#979797",
+              }}
+              onClick={() => {
+                setCrewPage((prevPage) => 3);
+              }}
+            ></div>
+          </div>
         </div>
       </div>
-      <div className="crew-image-panel">
-        <div
-          className="crew-image-div"
-          style={{ backgroundImage: handleCrewBG().backgroundImage }}
-        ></div>
-      </div>
+      <hr className="img-hr" />
+      <div
+        className="crew-image-div"
+        style={{ backgroundImage: handleCrewBG().backgroundImage }}
+      ></div>
     </div>
   );
 };

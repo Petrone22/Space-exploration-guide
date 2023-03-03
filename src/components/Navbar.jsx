@@ -63,16 +63,32 @@ const Navbar = ({ page, setPage }) => {
         }}
       >
         <ul className="mobile-nav-list">
-          <li>
+          <li
+            onClick={() => {
+              setPage((prevPage) => 0);
+            }}
+          >
             <div className="mb-li-num">00</div> HOME
           </li>
-          <li>
+          <li
+            onClick={() => {
+              setPage((prevPage) => 1);
+            }}
+          >
             <div className="mb-li-num">01</div> DESTINATION
           </li>
-          <li>
+          <li
+            onClick={() => {
+              setPage((prevPage) => 2);
+            }}
+          >
             <div className="mb-li-num">02</div> CREW
           </li>
-          <li>
+          <li
+            onClick={() => {
+              setPage((prevPage) => 3);
+            }}
+          >
             <div className="mb-li-num">03</div> TECHNOLOGY
           </li>
         </ul>
