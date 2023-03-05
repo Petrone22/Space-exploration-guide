@@ -129,7 +129,7 @@ tr {
   display: none;
 }
 .destination-page {
-  padding: 50px;
+  padding: 27px;
   height: 100%;
 }
 .pick-destination-div {
@@ -362,6 +362,10 @@ h6 {
   }
 }
 @media all and (max-width: 1100px) {
+  .main-content {
+    height: 100%;
+    overflow: hidden;
+  }
   .space {
     padding: 0;
     background-image: url(./assets/home/background-home-tablet.jpg);
@@ -374,6 +378,9 @@ h6 {
     backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.1);
     width: 60%;
+  }
+  .nav-menu {
+    margin-right: 1%;
   }
   .nav-list {
     gap: 1.5rem;
@@ -493,7 +500,7 @@ h6 {
   .meet-your-crew {
     position: absolute;
     left: 10px;
-    width: 100%;
+    width: 90%;
 
     top: 110px;
     font-size: 18px;
@@ -602,6 +609,15 @@ h6 {
   html,
   body {
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .main-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .nav-menu {
+    width: 0;
   }
   .nav-bar {
     height: 80px;
@@ -625,7 +641,7 @@ h6 {
     position: absolute;
     right: 0;
     top: 1px;
-    height: 100%;
+    height: 100vh;
 
     list-style: none;
     background-color: rgba(255, 255, 255, 0.1);
@@ -675,11 +691,19 @@ h6 {
   }
   .pick-destination-div {
     font-size: 15px;
+    width: 90%;
     text-align: center;
-    width: 100%;
     margin-bottom: 40px;
     position: absolute;
     top: 100px;
+  }
+  .planet-button {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .planet-buttons {
+    display: flex;
+    gap: 1rem;
   }
   .planet-capsule {
     flex-direction: column;
@@ -706,14 +730,17 @@ h6 {
   .planet-paragraph {
     margin-bottom: 20px;
     margin-top: 15px;
-    font-size: 15px;
-    max-width: 80%;
+    font-size: 13px;
+    text-align: center;
+    width: calc(100% - 10rem);
   }
   .planet-hr {
     width: 80%;
   }
   .planet-information {
     margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
   }
   .distance-span {
     font-size: 14px;
@@ -735,6 +762,7 @@ h6 {
   }
   .crew-page {
     padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -755,7 +783,7 @@ h6 {
   }
   .meet-your-crew {
     position: absolute;
-    width: 100%;
+    width: 90%;
     text-align: center;
     top: 90px;
     font-size: 18px;
@@ -824,7 +852,7 @@ h6 {
     font-size: 15px;
     top: 85px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
   }

@@ -5,7 +5,7 @@ import titan from "../assets/destination/image-titan.png";
 import mars from "../assets/destination/image-mars.png";
 import moon from "../assets/destination/image-moon.png";
 
-const Destination = ({ page }) => {
+const Destination = ({ page, nav }) => {
   const [planetPage, setPlanetPage] = useState(0);
   function getPlanetData() {
     return {
@@ -38,7 +38,10 @@ const Destination = ({ page }) => {
             backgroundImage: handleBackground().backgroundImage,
           }}
         ></div>
-        <div className="planet-selection-div">
+        <div
+          className="planet-selection-div"
+          style={{ zIndex: page === 1 ? "100" : "0" }}
+        >
           <div className="planet-buttons">
             <button
               className="planet-button"
@@ -57,6 +60,7 @@ const Destination = ({ page }) => {
               style={{
                 borderBottom: planetPage === 1 ? "2px solid white" : "none",
                 color: planetPage === 1 ? "white" : "#d0d6f9",
+                zIndex: nav ? "-10" : "10",
               }}
               onClick={() => {
                 setPlanetPage((prevPlanet) => 1);
@@ -69,6 +73,7 @@ const Destination = ({ page }) => {
               style={{
                 borderBottom: planetPage === 2 ? "2px solid white" : "none",
                 color: planetPage === 2 ? "white" : "#d0d6f9",
+                zIndex: nav ? "-10" : "10",
               }}
               onClick={() => {
                 setPlanetPage((prevPlanet) => 2);
@@ -81,6 +86,7 @@ const Destination = ({ page }) => {
               style={{
                 borderBottom: planetPage === 3 ? "2px solid white" : "none",
                 color: planetPage === 3 ? "white" : "#d0d6f9",
+                zIndex: nav ? "-10" : "10",
               }}
               onClick={() => {
                 setPlanetPage((prevPlanet) => 3);

@@ -3,9 +3,8 @@ import navImg from "../assets/icon.svg";
 import hamburger from "../assets/hamburgerMenu.svg";
 import xicon from "../assets/xicon.svg";
 
-const Navbar = ({ page, setPage }) => {
+const Navbar = ({ page, setPage, setNav }) => {
   const [navOpened, setnavOpenend] = useState(false);
-
   return (
     <div className="nav-bar">
       <div className="nav-img">
@@ -60,12 +59,14 @@ const Navbar = ({ page, setPage }) => {
         className="mobile-nav-menu"
         style={{
           opacity: navOpened ? "100%" : "0%",
+          pointerEvents: navOpened ? "auto" : "none",
         }}
       >
         <ul className="mobile-nav-list">
           <li
             onClick={() => {
               setPage((prevPage) => 0);
+              setnavOpenend((prevNav) => !prevNav);
             }}
           >
             <div className="mb-li-num">00</div> HOME
@@ -73,6 +74,7 @@ const Navbar = ({ page, setPage }) => {
           <li
             onClick={() => {
               setPage((prevPage) => 1);
+              setnavOpenend((prevNav) => !prevNav);
             }}
           >
             <div className="mb-li-num">01</div> DESTINATION
@@ -80,6 +82,7 @@ const Navbar = ({ page, setPage }) => {
           <li
             onClick={() => {
               setPage((prevPage) => 2);
+              setnavOpenend((prevNav) => !prevNav);
             }}
           >
             <div className="mb-li-num">02</div> CREW
@@ -87,6 +90,7 @@ const Navbar = ({ page, setPage }) => {
           <li
             onClick={() => {
               setPage((prevPage) => 3);
+              setnavOpenend((prevNav) => !prevNav);
             }}
           >
             <div className="mb-li-num">03</div> TECHNOLOGY
@@ -97,6 +101,7 @@ const Navbar = ({ page, setPage }) => {
         className="hamburger"
         onClick={() => {
           setnavOpenend((prevNav) => !prevNav);
+          setNav((preiousvNav) => !preiousvNav);
         }}
       >
         <img src={navOpened ? xicon : hamburger} alt="menu" />

@@ -20,6 +20,7 @@ import technologyBGmobile from "../assets/technology/background-technology-mobil
 
 // import data from "./data.json";
 const Space = () => {
+  const [nav, setNav] = useState(false);
   const [dimensions, setDimensions] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -37,7 +38,7 @@ const Space = () => {
   const [page, setPage] = useState(0);
 
   function navDisplay() {
-    return <Navbar setPage={setPage} page={page} />;
+    return <Navbar setNav={setNav} setPage={setPage} page={page} />;
   }
   // function getProperImage() {
   //   if (dimensions.width > 1100) {
@@ -114,11 +115,11 @@ const Space = () => {
     if (page === 0) {
       return <Home setPage={setPage} />;
     } else if (page === 1) {
-      return <Destination page={page} />;
+      return <Destination nav={nav} page={page} />;
     } else if (page === 2) {
       return <Crew />;
     } else {
-      return <Technology />;
+      return <Technology nav={nav} />;
     }
   }
   return (

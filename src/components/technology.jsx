@@ -6,7 +6,7 @@ import capsulePortrait from "../assets/technology/image-space-capsule-portrait.j
 import spaceportLandscape from "../assets/technology/image-spaceport-landscape.jpg";
 import spaceportPortrait from "../assets/technology/image-spaceport-portrait.jpg";
 import data from "../data.json";
-const Technology = () => {
+const Technology = ({ nav }) => {
   const [dimensions, setDimensions] = React.useState({
     width: window.innerWidth,
     height: window.innerHeight,
